@@ -14,6 +14,7 @@
 		F51601072074AE2900656DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51601052074AE2900656DF6 /* LaunchScreen.storyboard */; };
 		F516010A2074AE2900656DF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F51601092074AE2900656DF6 /* main.m */; };
 		F51601142074AE2900656DF6 /* NetworkUnitTestCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51601132074AE2900656DF6 /* NetworkUnitTestCaseTests.m */; };
+		F516011F2074B37E00656DF6 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F516011E2074B37E00656DF6 /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F516010F2074AE2900656DF6 /* NetworkUnitTestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkUnitTestCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51601132074AE2900656DF6 /* NetworkUnitTestCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkUnitTestCaseTests.m; sourceTree = "<group>"; };
 		F51601152074AE2900656DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F516011E2074B37E00656DF6 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				F51601052074AE2900656DF6 /* LaunchScreen.storyboard */,
 				F51601082074AE2900656DF6 /* Info.plist */,
 				F51601092074AE2900656DF6 /* main.m */,
+				F516011E2074B37E00656DF6 /* HttpClient.swift */,
 			);
 			path = NetworkUnitTestCase;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				TargetAttributes = {
 					F51600F62074AE2700656DF6 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					F516010E2074AE2900656DF6 = {
 						CreatedOnToolsVersion = 9.3;
@@ -205,6 +209,7 @@
 			files = (
 				F51600FF2074AE2700656DF6 /* ViewController.m in Sources */,
 				F516010A2074AE2900656DF6 /* main.m in Sources */,
+				F516011F2074B37E00656DF6 /* HttpClient.swift in Sources */,
 				F51600FC2074AE2700656DF6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkUnitTestCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -369,6 +375,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = intelivexlabs.NetworkUnitTestCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -377,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkUnitTestCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -385,6 +394,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = intelivexlabs.NetworkUnitTestCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -392,6 +402,7 @@
 		F516011C2074AE2900656DF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkUnitTestCaseTests/Info.plist;
@@ -410,6 +421,7 @@
 		F516011D2074AE2900656DF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkUnitTestCaseTests/Info.plist;
